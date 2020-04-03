@@ -127,7 +127,7 @@ sub Init {
 	$self->DisableReadLine;
 	$self->Connect('api.github.com', 443, ssl=>1);
 	$self->Write("GET https://api.github.com/repos/Peace-and-Protection/Peace-and-Protection/issues/$self->{issue} HTTP/1.0\r\n");
-	$self->Write("User-Agent: https://github.com/acvxqs/pnplinker\r\n");
+	$self->Write("User-Agent: https://github.com/acvxqs/zncpnplinker\r\n");
 	$self->Write("Host: api.github.com\r\n");
 	$self->Write("\r\n");
 }
